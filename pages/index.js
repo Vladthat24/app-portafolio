@@ -6,13 +6,25 @@ import {
   Heading,
   Image,
   Link,
-  useColorModeValue
+  useColorModeValue,
+  List,
+  ListItem,
+  Icon,
+  SimpleGrid
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Layout from '../components/layouts/article'
 import { BioSection, BioYear } from '../components/bio'
+import { GridItem } from '../components/grid-item'
+import {
+  IoLogoDeviantart,
+  IoLogoGithub,
+  IoLogoGitlab,
+  IoLogoLinkedin,
+  IoLogoDiscord
+} from 'react-icons/io5'
 
 const Page = () => {
   return (
@@ -106,27 +118,59 @@ const Page = () => {
             Art, Music, Movie, Programming, Comics, Libros, Viajes
           </Paragraph>
         </Section>
-        <Section>
+        <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
-            Programing of language
+            On the web
           </Heading>
-          <Paragraph>Php, Java, Python, Java Script</Paragraph>
-          <Heading as="h3" variant="section-title">
-            Framework
-          </Heading>
-          <Paragraph>
-            Laravel Lumen, Django Rest, React, Boostrap, Semantic
-          </Paragraph>
-          <Heading as="h3" variant="section-title">
-            Database Engines
-          </Heading>
-          <Paragraph>SqlServer, MySql, Oracle, MongoDB</Paragraph>
-          <Heading as="h3" variant="section-title">
-            Other knowledge
-          </Heading>
-          <Paragraph>
-            Windows Server 2012R2+, User Manager Cpanel, Batcheros
-          </Paragraph>
+          <List>
+            <ListItem>
+              <Link href="https://github.com/Vladthat24" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoGithub} />}
+                >
+                  @vladhat24
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://gitlab.com/vladhatlab" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoGitlab} />}
+                >
+                  @VladHat
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
+                href="https://www.linkedin.com/in/yosshi-condori-mendieta-80708b1b7"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoLinkedin} />}
+                >
+                  @Y. Condori
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link>
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoDeviantart} />}
+                >
+                  @Dev VlatHat
+                </Button>
+              </Link>
+            </ListItem>
+          </List>
         </Section>
       </Container>
     </Layout>

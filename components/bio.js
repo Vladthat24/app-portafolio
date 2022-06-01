@@ -9,3 +9,7 @@ export const BioYear = styled.span`
   font-weight: bold;
   margin-right: 1em;
 `
+export const BioLanguage = styled(Box)`
+  font-weight: bold;
+  margin-right: 1em;
+`

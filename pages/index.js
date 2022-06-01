@@ -16,15 +16,27 @@ import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Layout from '../components/layouts/article'
-import { BioSection, BioYear } from '../components/bio'
+import { BioSection, BioYear, BioLanguage } from '../components/bio'
 import { GridItem } from '../components/grid-item'
 import {
   IoLogoDeviantart,
   IoLogoGithub,
   IoLogoGitlab,
   IoLogoLinkedin,
-  IoLogoDiscord
+  IoLogoJavascript
 } from 'react-icons/io5'
+
+import { TbBrandPhp, TbBrandPython } from 'react-icons/tb'
+import { FaJava } from 'react-icons/fa'
+import {
+  DiDjango,
+  DiLaravel,
+  DiReact,
+  DiBootstrap,
+  DiJqueryLogo,
+  DiMsqlServer
+} from 'react-icons/di'
+import { SiSemanticuireact, SiMysql, SiOracle } from 'react-icons/si'
 
 const Page = () => {
   return (
@@ -117,6 +129,65 @@ const Page = () => {
           <Paragraph>
             Art, Music, Movie, Programming, Comics, Libros, Viajes
           </Paragraph>
+        </Section>
+        <Section delay={0.2}>
+          <Heading as="h3" variant="section-title">
+            Technologies
+          </Heading>
+          <BioYear>Leanguage</BioYear>
+          <SimpleGrid columns={[4]} gap={4}>
+            <Section>
+              <TbBrandPhp size={48} />
+            </Section>
+            <Section>
+              <TbBrandPython size={48} />
+            </Section>
+            <Section>
+              <FaJava size={48} />
+            </Section>
+            <Section>
+              <IoLogoJavascript size={48} />
+            </Section>
+          </SimpleGrid>
+
+          <BioYear> Framework</BioYear>
+          <SimpleGrid columns={[6]} gap={6}>
+            <Section>
+              <DiDjango size={48} />
+            </Section>
+            <Section>
+              <DiLaravel size={48} />
+            </Section>
+            <Section>
+              <DiReact size={48} />
+            </Section>
+            <Section>
+              <DiBootstrap size={48} />
+            </Section>
+            <Section>
+              <DiJqueryLogo size={48} />
+            </Section>
+            <Section>
+              <SiSemanticuireact size={48} />
+            </Section>
+          </SimpleGrid>
+
+          <BioYear> Database Engine</BioYear>
+          <SimpleGrid columns={[3]} gap={3}>
+            <Section>
+              <SiMysql size={48} />
+            </Section>
+            <Section>
+              <DiMsqlServer size={48} />
+            </Section>
+            <Section>
+              <SiOracle size={48} />
+            </Section>
+          </SimpleGrid>
+          <BioSection>
+            <BioYear>Others</BioYear>
+            Windows Server, AWS EC2, Linux Ubuntu
+          </BioSection>
         </Section>
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">

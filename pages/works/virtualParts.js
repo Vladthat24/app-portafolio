@@ -36,10 +36,10 @@ const Work = () => {
             <span>CatSoft - JLG SAC</span>
           </ListItem>
         </List>
-        <WorkImage src="/images/works/tramite.png" alt="tramite" />
+        <WorkImage src="/images/works/nuevotramite-stdw.png" alt="tramite" />
         <WorkImage src="/images/works/stdw-usuario.png" alt="tramite" />
-        <WorkImage src="/images/works/stdw-consulta.png" alt="tramite" />
-        <WorkImage src="/images/works/stdw-hojaruta.png" alt="tramite" />
+        <WorkImage src="/images/works/consultatramite-stdw.png" alt="tramite" />
+        <WorkImage src="/images/works/reporteseguimiento-stdw.png" alt="tramite" />
       </Container>
     </Layout>
   )

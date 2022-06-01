@@ -35,6 +35,7 @@ const Visits = () => {
         </List>
         <WorkImage src="/images/works/srv-consulta.png" alt="srv" />
         <WorkImage src="/images/works/srv-dashboard.png" alt="srv" />
+        <WorkImage src="/images/works/panelregistro-srv.png" alt="srv"/>
       </Container>
     </Layout>
   )

@@ -1,7 +1,6 @@
 import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/works'
-import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const Visits = () => {
@@ -35,7 +34,7 @@ const Visits = () => {
         </List>
         <WorkImage src="/images/works/srv-consulta.png" alt="srv" />
         <WorkImage src="/images/works/srv-dashboard.png" alt="srv" />
-        <WorkImage src="/images/works/panelregistro-srv.png" alt="srv"/>
+        <WorkImage src="/images/works/panelregistro-srv.png" alt="srv" />
       </Container>
     </Layout>
   )

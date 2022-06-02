@@ -4,6 +4,7 @@ import Section from '../components/section'
 import Layout from '../components/layouts/article'
 
 import thumbTramite from '../public/images/works/tramite.png'
+import thumbResturant from '../public/images/works/pedidos-rest.png'
 import thumbRecordVisits from '../public/images/works/Recordvisits.png'
 import thumbConsultationProcess from '../public/images/works/consultationprocess.png'
 import thumbMettYourObstetrician from '../public/images/works/mettyourobstetrician.png'
@@ -26,6 +27,17 @@ const Works = () => {
             >
               System that allows efficient document management, such as
               administration through modules in the administrator option.
+            </WorkGridItem>
+          </Section>
+          <Section>
+            <WorkGridItem
+              id="restaurant"
+              title="Resturant"
+              thumbnail={thumbResturant}
+            >
+              System that allows to create virtual menus of a restaurant, in
+              order to provide a unique experience to the customer,
+              incorporating technology in the order flow.
             </WorkGridItem>
           </Section>
           <Section>
